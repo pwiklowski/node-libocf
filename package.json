@@ -2,9 +2,9 @@
   "name": "node-libocf",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/pwiklowski/node-libocf/issues"
   },
-  "homepage": "https://github.com/pwiklowski/node-libocf#readme"
+  "homepage": "https://github.com/pwiklowski/node-libocf#readme",
+  "dependencies": {
+    "@types/node": "^10.12.12",
+    "libcoap": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.1"
+  }
 }
