@@ -18,7 +18,8 @@
   "homepage": "https://github.com/pwiklowski/node-libocf#readme",
   "dependencies": {
     "@types/node": "^10.12.12",
-    "libcoap": "^0.1.0"
+    "libcoap": "^0.1.0",
+    "rxjs": "^6.3.3"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",
