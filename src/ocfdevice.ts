@@ -20,4 +20,12 @@ export class OcfDevice {
         });
     }
 
+    observe(href: String) : Observable<any>{
+        return new Observable(observer => {
+            this.client.observe(href).subscribe((response:Response) =>{
+                observer.next(response.packet.getPayloadObject());
+            });
+        });
+    }
+
 }

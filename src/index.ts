@@ -12,6 +12,9 @@ client.search().subscribe((device: OcfDevice) => {
 
             dev.links.forEach(item => {
                 console.log(item.href);
+                device.observe(item.href).subscribe(value => {
+                    console.log(value);
+                });
             });
         });
     });
